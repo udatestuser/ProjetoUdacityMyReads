@@ -8,6 +8,8 @@ class App extends Component {
   state = {
     contacts: []
   }
+
+  
   componentDidMount() {
     ContactsAPI.getAll().then((contacts) => {
       this.setState({ contacts })
